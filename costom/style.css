@@ -1,0 +1,119 @@
+/* ◆ 追記事項 */
+/* [0] 授業内容のリアルタイム参照に失敗した為 100%のコードを複製しています。 */
+
+@charset "utf-8";
+@import "https://unpkg.com/ress/dist/ress.min.css"; /* 各ブラウザのCSS規定設定をリセットする */
+
+*
+{
+ box-sizing: border-box;
+}
+
+/* ページ共通 */
+
+body
+{
+ font-family: BIZ UDgothic;
+ font-weight: bold;
+ font-size: 16px;
+
+ background: rgb(23, 27, 31);
+ color: rgb(247, 251, 255);
+ min-width: 1000px;
+}
+
+.inner
+{
+ width: 1000px;
+ margin: auto;
+}
+
+img
+{
+ max-width: 100%;
+ vertical-align: bottom;
+ object-fit: cover;
+}
+
+/* ヘッダー */
+
+header 
+{
+ color: rgb(55, 59, 63);
+ background: rgb(39, 43, 47);
+ height: 50vh; /* 画面の半分の高さに設定 */
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ background: url("img/back-ground_gradation-0.png") center / cover no-repeat;
+}
+
+/* セクション共通 */
+
+section
+{
+ width: 100%;
+ padding: 80px 0;
+}
+
+section h2
+{
+ margin-bottom: 1em;
+}
+
+section p
+{
+ line-height: 1.8;
+}
+
+/* セクション #first */
+
+#first /* #でIDの指定が可能 */
+{
+ width: 1000px;
+ margin: auto;
+ display: flex;
+ background: url("img/back-ground_7d7f81.png") left center no-repeat;
+}
+
+#first .inner
+{
+ width: 500px;
+ margin-right: 0;
+ margin-left: auto;
+}
+
+#first p
+{
+ margin: 1em 0;
+}
+
+/* セクション #second, #third 共通設定 */
+
+#second .inner,
+#third .inner
+{
+ text-align: center;
+}
+
+#second p,
+#third p
+{
+ margin-bottom: 3em;
+}
+
+/* セクション #second */
+
+#second
+{
+background: rgb(39, 43, 47);
+ padding-bottom: 0;
+}
+
+footer
+{
+ background: rgb(31, 63, 95);
+ text-align: center;
+ padding: 20px 0;
+}

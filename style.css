@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* 2026/09/10/16:29.16時点での 最新基本設定 */
+
+*
+{
+ box-sizing: border-box;
+}
+
+body
+{
+ background: rgb(247, 251, 255);
+ color: rgb(55, 59, 63);
+
+ font-family: BIZ UDgothic;
+ font-weight: bold;
+ font-size: 16px;
+}
+
+ul
+{
+ color: rgb(23, 27, 31);
+ list-style: square;
+ padding-left: 1em;
+}
+
+li
+{
+ padding-right: 0.5em;
+}
+
+a
+{
+ text-decoration: none;
+ color: rgb(55, 59, 63);
+}
+
+a:visited
+{
+ color: rgb(127, 0, 31);
+}
+
+a:hover
+{
+ color: rgb(255, 0, 63);
+}

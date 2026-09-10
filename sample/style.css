@@ -1,0 +1,113 @@
+/* ◆ 追記事項 */
+/* [0] 授業内容のリアルタイム参照に失敗した為 100%のコードを複製しています。 */
+
+@charset "utf-8";
+@import "https://unpkg.com/ress/dist/ress.min.css"; /* 各ブラウザのCSS規定設定をリセットする */
+
+*
+{
+ box-sizing: border-box;
+}
+
+/* ページ共通 */
+
+body
+{
+ color: #333333;
+ min-width: 1000px;
+}
+
+.inner
+{
+ width: 1000px;
+ margin: auto;
+}
+
+img
+{
+ max-width: 100%;
+ vertical-align: bottom;
+ object-fit: cover;
+}
+
+/* ヘッダー */
+
+header 
+{
+ color: #ffffff;
+ height: 50vh; /* 画面の半分の高さに設定 */
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ background: url("https://placehold.jp/1500x1200.png") center / cover no-repeat;
+}
+
+/* セクション共通 */
+
+section
+{
+ width: 100%;
+ padding: 80px 0;
+}
+
+section h2
+{
+ margin-bottom: 1em;
+}
+
+section p
+{
+ line-height: 1.8;
+}
+
+/* セクション #first */
+
+#first /* #でIDの指定が可能 */
+{
+ width: 1000px;
+ margin: auto;
+ display: flex;
+ background: url("https://placehold.jp/400x400.png") left center no-repeat;
+}
+
+#first .inner
+{
+ width: 500px;
+ margin-right: 0;
+ margin-left: auto;
+}
+
+#first p
+{
+ margin: 1em 0;
+}
+
+/* セクション #second, #third 共通設定 */
+
+#second .inner,
+#third .inner
+{
+ text-align: center;
+}
+
+#second p,
+#third p
+{
+ margin-bottom: 3em;
+}
+
+/* セクション #second */
+
+#second
+{
+ background: #eeeeee;
+ padding-bottom: 0;
+}
+
+footer
+{
+ background: #eeeeee;
+ text-align: center;
+ padding: 20px 0;
+}
